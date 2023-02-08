@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Fonts */
+    --font-primary: Merriweather;
+    --font-secondary: Lato;
+    /* color */
+    --color: #1A202C;
+    --color-link: #2B6CB0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+
+/* container left start */
+
+.image {
+    width: 50%;
+    height: 100%;
+    background-color: #F7FAFC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* container left end */
+
+
+/* container right start */
+
+.login {
+    width: 50%;
+    height: 100%;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+
+/* container right end */
+
+
+/* area de login start */
+.content-login {
+    width: 330px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+
+h2 {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    color: var(--color);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: var(--font-primary);
+    font-size: 23px;
+    color: var(--color);
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.style-login {
+    width: 330px;
+    padding: 8px;
+    background-color: #FFF;
+    border: 2px solid #838080;
+    opacity: 0.4;
+    border-radius: 5px;
+}
+
+.content-alert {
+    display: flex;
+    justify-content: space-between;
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+}
+
+#email {
+    margin: 5px 0px 5px 0px;
+    outline: none;
+}
+
+#password {
+    margin: 5px 0px 30px 0px;
+    outline: none;
+}
+
+label {
+    font-family: var(--font-secondary);
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--color);
+}
+
+.desc {
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color);
+}
+
+#checkbox {
+    margin-right: 5px;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #838080;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+
+#checkbox:checked {
+    background-color: #838080;
+}
+
+.link {
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+.botton {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #04C35C;
+    font-size: 16px;
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    text-align: center;
+    border-radius: 5px;
+    color: #FFF;
+    margin: 30px 0px 10px 0px;
+    cursor: pointer;
+}
+
+.botton:hover {
+    background-color: #0d9e51;
+}
+
+.botton.preto {
+    background-color: var(--color);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.botton.preto:hover {
+    background-color: #000000;
+}
+
+.logo {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+}
+
+p .link-footer {
+    font-size: 17px;
+}
+
+p {
+    font-family: var(--font-secondary);
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--color);
+}
+
+/* area de login end */
+
+@media(max-width: 800px) {
+    .image {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+}
+
+@media(max-width: 400px) {
+
+    .content-login,
+    .style-login {
+        width: 100%;
+    }
+}
